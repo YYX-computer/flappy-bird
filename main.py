@@ -28,7 +28,7 @@ def main():
     pipe_x = int(WIDTH)
     score = 0
     while(1):
-        if(pipe_x == -pipe.get_width()):
+        if(pipe_x <= -pipe.get_width()):
             pipe = gen_pipe(HEIGHT)
             pipe_x = int(WIDTH)
             score += 1
